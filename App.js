@@ -109,7 +109,7 @@ const App = () => {
             <Paper style={{ maxHeight: '200px', overflowY: 'auto' }}>
               <List>
                 {suggestions
-                  .filter((item) => !chips.some((chip) => chip.label === item.name))
+                  .filter((item) =>!chips.some((chip) => chip.label === item.name))
                   .map((item) => (
                     <ListItem key={item.id} onClick={() => handleItemClick(item)}>
                       <div style={{ display: 'flex', alignItems: 'center' }}>
